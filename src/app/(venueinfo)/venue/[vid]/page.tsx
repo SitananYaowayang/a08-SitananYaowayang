@@ -29,7 +29,7 @@ export default async function venueDetailPage({params}:{params:{vid:string}}){
                     <div>Postalcode : {venueDetail.data.postalcode}</div>
                     <div>Tel : {venueDetail.data.tel}</div>
                     
-                    <div>Deily Rate: {venueDetail.data.dailyRate} (insurance included)</div>
+                    <div>Deily Rate: {venueDetail.data.dailyrate} (insurance included)</div>
 
                 </div>
             </div>
