@@ -39,6 +39,7 @@ export default function CardPanel() {
         {vid:"002",name:"Spark Space",image:"/img/sparkspace.jpg"},
         {vid:"003",name:"The Grand Table",image:"/img/grandtable.jpg"},
     ]   
+  
     return (
         <div style={{
             margin: "20px",

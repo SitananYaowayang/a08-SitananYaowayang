@@ -12,7 +12,7 @@ export default function Card({
 }: { 
     venueName: string, 
     imgSrc: string, 
-    rating: number, 
+    rating?: number, 
     onRatingChange?: (newRating: number) => void 
 }) {
     return (

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Card from "./Card";
 
-export default async function VenueCatalog({venuesJson}:{venuesJson:Object}){
-    const venuesJsonReady = await venuesJson    
+export default async function VenueCatalog({venuesJson}:{venuesJson:VenueJson}){
+    // const venuesJson = await venuesJson    
     return(
         <>
-        Explore {venuesJsonReady.count} models in our catalog
+        Explore {venuesJson.count} models in our catalog
         
         <div style={{margin:"20px",display:"flex",
                 flexDirection:"row",alignContent:"space-around",
@@ -13,7 +13,7 @@ export default async function VenueCatalog({venuesJson}:{venuesJson:Object}){
             }}>
 
                 {     
-                    venuesJsonReady.data.map((venueItem:Object)=>(
+                    venuesJson.data.map((venueItem:VenueItem)=>(
                         <Link href={`/venue/${venueItem.id}`}
                         className="w-1/5">
                         <Card 
